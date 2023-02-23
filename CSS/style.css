@@ -3,6 +3,18 @@ html {
     position: relative;
 }
 
+/* nav bar*/
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    font-size: 20px;
+    padding: 30pt;
+}
+
 .nav-bar {
     margin: 0px 0px 0px 180px;
     display: flex;
@@ -31,7 +43,7 @@ html {
 }
 
 .container input {
-    width: 420px;
+    width: 350px;
     height: 40px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -70,6 +82,7 @@ a:active {
     text-decoration: none;
 }
 
+/* fin nav bar*/
 .container {
     background-color: #278241;
     height: 50px;
@@ -456,6 +469,7 @@ a:active {
     line-height: 17px;
 }
 
+/* material */
 .rectangulo {
     position: absolute;
     width: 414px;
@@ -497,6 +511,7 @@ a:active {
     line-height: 34px;
     color: #FFFFFF;
 }
+
 
 /* cards */
 .centro {

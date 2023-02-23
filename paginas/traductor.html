@@ -5,61 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Proyecto</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Traductor</title>
 </head>
 
-<body>
-
+<body id="body">
     <!-- Nav bar -->
     <header class="header" id="inicio">
         <nav class="navbar" id="menu">
             <div class="container">
                 <div class="nav-bar">
                     <label for="" class="brand">
-                        <a href="./index.html"><img src="./imagenes/Polilearn.svg" alt="logo"></a>
+                        <a href="../index.html"><img src="../imagenes/Polilearn.svg" alt="logo"></a>
                     </label>
 
                     <input type="search" class="input" placeholder="¿Qué estás buscando?">
-                    <img src="./iconos/lupa.svg" alt="" id="lupa">
+                    <img src="../iconos/lupa.svg" alt="" id="lupa">
                     <ul>
-                        <li><a class="nav-link" href="./paginas/material.html">Material</a>
-                        <li><a class="nav-link" href="./paginas/traductor.html">Traductor</a></li>
-                        <li><a class="nav-link" href="./paginas/form.html">Iniciar sesión</a></li>
+                        <li><a class="nav-link" href="./material.html">Material</a>
+                        <li><a class="nav-link" href="./traductor.html">Traductor</a></li>
+                        <li><a class="nav-link" href="./form.html">Iniciar sesión</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Card de presentacion -->
+    <!--Traductor funcional-->
 
-    <div class="separador">
-        <img src="../imagenes/fondo-presentación.png" alt="fondo-1" id="fondo-1">
-        <div class="container-c">
-            <h3>¡Bienvenido!</h3>
-            <p>Te ayudaremos a aprender otros idiomas en poco tiempo. ¿Estás listo? Comencemos.</p>
+    <div class="idioma-1">
+        <div class="dropdownn">
+            <select name="idioma" id="idioma">
+                <option value="seleccion" disabled selected>Selecciona el idioma</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="portugues">Portugues</option>
+            </select>
+
+            <div class="contenedor-1">
+                <h3>Introduzca el texto a traducir</h3>
+            </div>
+        </div>
+    </div>
+    <img src="../images/iconos/Swap.svg" id="swap" alt="">
+
+    <div class="idioma-2">
+        <div class="dropdownn">
+            <select name="idioma" id="idioma">
+                <option value="seleccion" disabled selected>Selecciona el idioma</option>
+                <option value="ingles">Inglés</option>
+                <option value="frances">Francés</option>
+                <option value="portugues">Portugues</option>
+            </select>
+
+            <div class="contenedor-2">
+                <h3>Introduzca el texto a traducir</h3>
+            </div>
         </div>
     </div>
 
-
-
-    <!-- Card "about us"-->
-
-    <div class="separador-2">
-        <img src="../imagenes/about-us.png" alt="fondo-2" id="fondo-2">
-        <div class="container-a">
-            <h3>Lo importante es aprender</h3>
-            <p>Te ofrecemos múltiples métodos para que puedas aprender cualquier idioma que se te plazca y
-                puedas
-                estudiar a tu ritmo sin apuros por tareas o exámenes.</p>
-            <input type="button" value="IR A MATERIAL" id="estudio">
-        </div>
+    <div class="traducir">
+        <button type="submit" class="btn btn-primary" id="trad">TRADUCIR</button>
     </div>
-
-
 
 
     <!-- Footer -->
@@ -97,17 +104,17 @@
                 <h2>Redes sociales</h2>
                 <div class="red-social">
                     <div class="social">
-                        <a href="#" class="instagram"><img src="./images/iconos/icono instagram.svg" alt="instagram">
+                        <a href="#" class="instagram"><img src="../iconos/icono instagram.svg" alt="instagram">
                             <h4 class="texto">Instagram</h4>
                         </a>
                     </div>
                     <div class="social">
-                        <a href="#" class="facebook"><img src="./images/iconos/facebook.svg" alt="facebook">
+                        <a href="#" class="facebook"><img src="../iconos/facebook.svg" alt="facebook">
                             <h4 class="texto">Facebook</h4>
                         </a>
                     </div>
                     <div class="social">
-                        <a href="#" class="twitter"><img src="./images/iconos/twitter.svg" alt="twitter">
+                        <a href="#" class="twitter"><img src="../iconos/twitter.svg" alt="twitter">
                             <h4 class="texto">Twitter</h4>
                         </a>
                     </div>
@@ -116,11 +123,7 @@
 
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+
 </body>
-
-
 
 </html>
