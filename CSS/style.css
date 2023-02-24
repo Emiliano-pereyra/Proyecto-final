@@ -31,7 +31,6 @@ nav ul li {
     height: 32px;
     left: 740px;
     top: 16px;
-
 }
 
 .nav-bar a {
@@ -50,6 +49,15 @@ nav ul li {
     border-color: #FFFFFF;
     border: none;
     margin-top: 4px;
+}
+
+
+
+.input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
 }
 
 ::-webkit-input-placeholder {
@@ -83,6 +91,14 @@ a:active {
 }
 
 /* fin nav bar*/
+
+/* nav-bar bootstrap*/
+nav.navbar{
+    background-color: #278241;
+}
+
+/* nav-bar bootstrap*/
+
 .container {
     background-color: #278241;
     height: 50px;
@@ -371,11 +387,11 @@ a:active {
 }
 
 .separador {
-    align-items: flex-start;
+    align-items: center;
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-    position: absolute;
+    margin: 0 auto;
     width: 1308px;
     height: 236px;
     left: 300px;
@@ -409,7 +425,7 @@ a:active {
 }
 
 .separador-2 {
-    position: absolute;
+    margin: 0 auto;
     width: 870px;
     height: 300px;
     left: 500px;
@@ -462,10 +478,9 @@ a:active {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    position: absolute;
+    margin: 0 auto;
     width: 210px;
     height: 40px;
-    left: 520px;
     line-height: 17px;
 }
 

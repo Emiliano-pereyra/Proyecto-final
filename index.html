@@ -13,43 +13,39 @@
 
 <body>
 
-    <!-- Nav bar -->
-    <header class="header" id="inicio">
-        <nav class="navbar" id="menu">
-            <div class="container">
-                <div class="nav-bar">
-                    <label for="" class="brand">
-                        <a href="./index.html"><img src="./imagenes/Polilearn.svg" alt="logo"></a>
-                    </label>
+    <!-- Nav bar bootstrap -->
+    <nav class="navbar bg-green-500">
+        <div class="container-fluid ">
+            <a class="ms-5" href="./index.html"><img src="./imagenes/Polilearn.svg" alt="logo"></a>
+            
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <img src="./iconos/lupa.svg" alt="">
+            </form>
+            <ul>
+                <li><a class="navbar-brand" href="./paginas/material.html">Material</a></li>
+                <li><a class="navbar-brand" href="./paginas/traductor.html">Traductor</a></li>
+                <li><a class="navbar-brand" href="./paginas/form.html">Iniciar Sesión</a></li>
+            </ul>
 
-                    <input type="search" class="input" placeholder="¿Qué estás buscando?">
-                    <img src="./iconos/lupa.svg" alt="" id="lupa">
-                    <ul>
-                        <li><a class="nav-link" href="./paginas/material.html">Material</a>
-                        <li><a class="nav-link" href="./paginas/traductor.html">Traductor</a></li>
-                        <li><a class="nav-link" href="./paginas/form.html">Iniciar sesión</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Card de presentacion -->
+        </div>
+    </nav>
+    <!-- Card de presentacion 
 
     <div class="separador">
-        <img src="../imagenes/fondo-presentación.png" alt="fondo-1" id="fondo-1">
+        <img src="./imagenes/fondo-presentación.png" alt="fondo-1" id="fondo-1">
         <div class="container-c">
             <h3>¡Bienvenido!</h3>
             <p>Te ayudaremos a aprender otros idiomas en poco tiempo. ¿Estás listo? Comencemos.</p>
         </div>
     </div>
+    -->
 
 
-
-    <!-- Card "about us"-->
+    <!-- Card "about us"
 
     <div class="separador-2">
-        <img src="../imagenes/about-us.png" alt="fondo-2" id="fondo-2">
+        <img src="./imagenes/about-us.png" alt="fondo-2" id="fondo-2">
         <div class="container-a">
             <h3>Lo importante es aprender</h3>
             <p>Te ofrecemos múltiples métodos para que puedas aprender cualquier idioma que se te plazca y
@@ -58,9 +54,45 @@
             <input type="button" value="IR A MATERIAL" id="estudio">
         </div>
     </div>
+-->
+    <section class="d-flex justify-content-center">
+        <div class="card mt-5" style="max-width: 1308px">
+            <div class="row g-0">
+                <div class="col-md-4 align-items-center">
+                    <img src="./imagenes/fondo-presentación.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lo importante es aprender</h5>
+                        <p class="card-text">Te ofrecemos múltiples métodos para que puedas aprender cualquier idioma
+                            que se te plazca y
+                            puedas
+                            estudiar a tu ritmo sin apuros por tareas o exámenes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-
+    <section class="d-flex justify-content-center">
+        <div class="card mt-5" style="max-width: 870px">
+            <div class="row g-0">
+                <div class="col-md-4 align-items-center">
+                    <img src="./imagenes/about-us.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lo importante es aprender</h5>
+                        <p class="card-text">Te ofrecemos múltiples métodos para que puedas aprender cualquier idioma
+                            que se te plazca y
+                            puedas
+                            estudiar a tu ritmo sin apuros por tareas o exámenes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -97,17 +129,17 @@
                 <h2>Redes sociales</h2>
                 <div class="red-social">
                     <div class="social">
-                        <a href="#" class="instagram"><img src="./images/iconos/icono instagram.svg" alt="instagram">
+                        <a href="#" class="instagram"><img src="./iconos/icono instagram.svg" alt="instagram">
                             <h4 class="texto">Instagram</h4>
                         </a>
                     </div>
                     <div class="social">
-                        <a href="#" class="facebook"><img src="./images/iconos/facebook.svg" alt="facebook">
+                        <a href="#" class="facebook"><img src="./iconos/facebook.svg" alt="facebook">
                             <h4 class="texto">Facebook</h4>
                         </a>
                     </div>
                     <div class="social">
-                        <a href="#" class="twitter"><img src="./images/iconos/twitter.svg" alt="twitter">
+                        <a href="#" class="twitter"><img src="./iconos/twitter.svg" alt="twitter">
                             <h4 class="texto">Twitter</h4>
                         </a>
                     </div>
