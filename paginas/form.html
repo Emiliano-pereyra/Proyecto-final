@@ -6,30 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Formulario</title>
 </head>
 
 <body>
-    <!-- Nav bar -->
-    <header class="header" id="inicio">
-        <nav class="navbar" id="menu">
-            <div class="container">
-                <div class="nav-bar">
-                    <label for="" class="brand">
-                        <a href="../index.html"><img src="../imagenes/Polilearn.svg" alt="logo"></a>
-                    </label>
+    <!-- Nav bar bootstrap -->
+    <nav class="navbar bg-green-500">
+        <div class="container-fluid ">
+            <a class="ms-5" href="../index.html"><img src="../imagenes/Polilearn.svg" alt="logo"></a>
 
-                    <input type="search" class="input" placeholder="¿Qué estás buscando?">
-                    <img src="../iconos/lupa.svg" alt="" id="lupa">
-                    <ul>
-                        <li><a class="nav-link" href="./material.html">Material</a>
-                    <li><a class="nav-link" href="./traductor.html">Traductor</a></li>
-                    <li><a class="nav-link" href="./form.html">Iniciar sesión</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <img src="../iconos/lupa.svg" alt="">
+            </form>
+            <ul>
+                <li><a class="navbar-brand" href="./material.html">Material</a></li>
+                <li><a class="navbar-brand" href="./traductor.html">Traductor</a></li>
+                <li><a class="navbar-brand" href="./form.html">Iniciar Sesión</a></li>
+            </ul>
+
+        </div>
+    </nav>
 
     <!-- Formulario -->
     <form class="formulario">
@@ -106,7 +105,9 @@
 
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
