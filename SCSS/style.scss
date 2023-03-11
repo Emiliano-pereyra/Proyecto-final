@@ -32,3 +32,46 @@ input::placeholder{
     top: 4px;
     right: 4px;
 }
+
+/* Fin nav */
+
+/* Material */
+
+aside{
+    background-color: black;
+    width: 40%;
+}
+
+
+.listas ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #FFFFFF;
+    gap: 15px;
+    margin-left: 16%;
+}
+
+#inscribir {
+    border-color: #278241;
+    background-color: #FFFFFF;
+    color: black;
+    
+}
+
+.datos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    gap: 40%;
+    line-height: 15px;
+}
+
+
+/* Fin material*/
+
+/* Traductor */
+

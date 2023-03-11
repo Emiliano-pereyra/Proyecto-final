@@ -12,7 +12,8 @@
 
 <body>
     <!-- Nav bar bootstrap -->
-    <nav class="navbar bg-green-500 d-flex flex-wrap justify-content-evenly" style="background-color: #278241;">
+    <nav class="navbar bg-green-500 d-flex flex-wrap justify-content-evenly" style="background-color: #278241;"
+        id="nav">
 
 
         <a class="mt-2 mb-2 ms-1" href="../index.html"><img src="../imagenes/Polilearn.svg" alt="logo"></a>
@@ -31,19 +32,12 @@
 
     </nav>
 
-    <aside>
 
-    </aside>
-    <main>
-
-    </main>
-    <!--Cartelera de material-->
-    <div class="rectangulo">
-        <div class="titulo">
-            <h2>Materiales de estudio</h2>
-        </div>
+    <aside id="lista" class="d-flex justify-content-evenly" >
+        <!--Cartelera de material-->
         <div class="listas">
             <ul>
+                <h2>Materiales de estudio</h2>
                 <li>
                     <h3>Cursos</h3>
                 </li>
@@ -79,93 +73,54 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </aside>
 
 
-    <!-- Card de cursos -->
-
-    <div class="centro">
-        <div class="columna-1">
-            <div class="card-horizontal" id="card-1">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés para principiantes</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
-                    </div>
-                    <p class="texto-card">Aprenderemos las bases de la escritura inglesa...</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
+    <main>
+        <!-- Card de cursos -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-1">
+                <div class="col-md-4 ">
+                    <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
                 </div>
-            </div>
-
-            <div class="card-horizontal" id="card-2">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés nivel intermedio</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingles para principiantes</h5>
+                        <div class="datos">
+                            <h6 class="info-card">Duración</h6>
+                            <h6 class="info-card">Participantes</h6>
+                        </div>
+                        <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
+                        <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
                     </div>
-                    <p class="texto-card">Profundizarás aún más en el lenguaje y se te dará la opción....</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
-                </div>
-            </div>
-
-            <div class="card-horizontal" id="card-3">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés nivel intermedio</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
-                    </div>
-                    <p class="texto-card">Profundizarás aún más en el lenguaje y se te dará la opción....</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
                 </div>
             </div>
         </div>
-        <div class="columna-2">
-            <div class="card-horizontal" id="card-4">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés nivel intermedio</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
-                    </div>
-                    <p class="texto-card">Profundizarás aún más en el lenguaje y se te dará la opción....</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
+        <!-- Card de cursos -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-1">
+                <div class="col-md-4">
+                    <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
                 </div>
-            </div>
-
-            <div class="card-horizontal" id="card-5">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés nivel intermedio</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Ingles para principiantes</h5>
+                        <div class="datos">
+                            <h6 class="info-card">Duración</h6>
+                            <h6 class="info-card">Participantes</h6>
+                        </div>
+                        <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
+                        <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
                     </div>
-                    <p class="texto-card">Profundizarás aún más en el lenguaje y se te dará la opción....</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
-                </div>
-            </div>
-
-            <div class="card-horizontal" id="card-6">
-                <img class="card-img-left" src="../imagenes/about-us.png" alt="card-image">
-                <div class="body-card">
-                    <h4 class="titulo-card">inglés nivel intermedio</h4>
-                    <div class="datos">
-                        <h6 class="info-card">Duración</h6>
-                        <h6 class="info-card">Participantes</h6>
-                    </div>
-                    <p class="texto-card">Profundizarás aún más en el lenguaje y se te dará la opción....</p>
-                    <a href="./inscripción.html" class="btn btn-success">Inscribirse</a>
                 </div>
             </div>
         </div>
-    </div>
+       
+    </main>
+
+
+
+
 
 
     <!-- Footer -->
