@@ -1,4 +1,4 @@
-html {
+body {
     min-height: 100%;
     position: relative;
 }
@@ -69,8 +69,8 @@ nav ul li {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 

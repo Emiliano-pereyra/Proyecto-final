@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./SCSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Proyecto</title>
@@ -14,21 +14,18 @@
 <body>
 
     <!-- Nav bar bootstrap -->
-    <nav class="navbar bg-green-500">
-        <div class="container-fluid ">
-            <a class="ms-5" href="./index.html"><img src="./imagenes/Polilearn.svg" alt="logo"></a>
-
-            <form class="d-flex" role="search">
+    <nav class="navbar bg-green-500 d-flex flex-wrap justify-content-evenly" style="background-color: #278241;">
+            <a class="mt-2 mb-2 ms-1" href="./index.html"><img src="./imagenes/Polilearn.svg" alt="logo"></a>
+            <form class="position-relative" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <img src="./iconos/lupa.svg" alt="">
+                <img src="./iconos/lupa.svg" alt="" id="lupa">
             </form>
-            <ul>
+            <ul class="mt-2 mb-2 ">
                 <li><a class="navbar-brand" href="./paginas/material.html">Material</a></li>
                 <li><a class="navbar-brand" href="./paginas/traductor.html">Traductor</a></li>
+
                 <li><a class="navbar-brand" href="./paginas/form.html">Iniciar Sesión</a></li>
             </ul>
-
-        </div>
     </nav>
     <!-- Card de presentacion 
 
@@ -40,7 +37,6 @@
         </div>
     </div>
     -->
-
 
     <!-- Card "about us"
 
@@ -93,61 +89,85 @@
             </div>
         </div>
     </section>
+    <section class="d-flex justify-content-center">
+        <div class="card mt-5" style="max-width: 870px">
+            <div class="row g-0">
+                <div class="col-md-4 align-items-center">
+                    <img src="./imagenes/about-us.png" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8 ">
+                    <div class="card-body">
+                        <h5 class="card-title">Lo importante es aprender</h5>
+                        <p class="card-text">Te ofrecemos múltiples métodos para que puedas aprender cualquier idioma
+                            que se te plazca y
+                            puedas
+                            estudiar a tu ritmo sin apuros por tareas o exámenes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Footer -->
-    <footer>
-        <div class="futer">
-
-            <div class="nosotros">
-                <h2>Sobre nosotros</h2>
-                <div class="h4">
-                    <h4>Métodos de enseñanza</h4>
-                    <h4>Cursos</h4>
-                    <h4>Preguntas frecuentes</h4>
-                    <h4>Contáctanos</h4>
-                </div>
-            </div>
-
-            <div class="aplicaciones">
-                <div class="h4">
-                    <h2>Aplicaciones</h2>
-                    <h4>Aplicación para Android</h4>
-                    <h4>Aplicación para IOS</h4>
-                </div>
-            </div>
-
-            <div class="terminos">
-                <div class="h4">
-                    <h2>Términos y privacidad</h2>
-                    <h4>Normas de la comunidad</h4>
-                    <h4>Términos legales</h4>
-                    <h4>Privacidad</h4>
-                </div>
-            </div>
-
-            <div class="redes">
-                <h2>Redes sociales</h2>
-                <div class="red-social">
-                    <div class="social">
-                        <a href="#" class="instagram"><img src="./iconos/icono instagram.svg" alt="instagram">
-                            <h4 class="texto">Instagram</h4>
-                        </a>
+    <footer class="text-center text-lg-start text-white mt-5 " style="background-color: #278241">
+        <!-- Grid container -->
+        <div class="container p-2 pb-2">
+            
+                <!--Grid fila-->
+                <div class="row">
+                    <!-- Grid Nosotros -->
+                    <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+                        <h4 class="text-uppercase mb-4 font-weight-bold">
+                            Sobre Nosotros
+                        </h4>
+                        <p>Métodos de enseñanza</p>
+                        <p>Cursos</p>
+                        <p>Preguntas frecuentes</p>
+                        <p>Contáctanos</p>
                     </div>
-                    <div class="social">
-                        <a href="#" class="facebook"><img src="./iconos/facebook.svg" alt="facebook">
-                            <h4 class="texto">Facebook</h4>
-                        </a>
-                    </div>
-                    <div class="social">
-                        <a href="#" class="twitter"><img src="./iconos/twitter.svg" alt="twitter">
-                            <h4 class="texto">Twitter</h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    <!-- Grid fin -->
 
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid Aplicaciones -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h4 class="text-uppercase mb-4 font-weight-bold">Aplicaciones</h4>
+                        <p>Aplicación para Android</p>
+                        <p>Aplicaciónpara IOS</p>
+                    </div>
+                    <!-- Grid fin -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid Términos -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h4 class="text-uppercase mb-4 font-weight-bold">
+                            Términos y condiciones
+                        </h4>
+                        <p>Normas de la comunidad</p>
+                        <p>Términos legales</p>
+                        <p>Privacidad</p>
+                    </div>
+                    <!-- Grid fin -->
+
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid Redes sociales -->
+                    <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mt-3">
+                        <h4 class="text-uppercase mb-4 font-weight-bold">Redes sociales</h4>
+                        <p><img src="./iconos/facebook.svg" alt="">Facebook</p>
+                        <p><img src="./iconos/twitter.svg" alt="">Twitter</p>
+                        <p><img src="./iconos/icono instagram.svg" alt="">Instagram</p>
+                    </div>
+                    <!-- Grid fin -->
+                </div>
+                <!--fila fin-->           
         </div>
+        <!-- Grid container -->
     </footer>
+    <!-- Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
