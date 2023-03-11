@@ -121,4 +121,50 @@ input::placeholder {
 #swap {
   max-width: 60px;
   max-height: 56px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* fin traductor*/
+/* Inicio form*/
+#sesion {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.orden-boton {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.seleccion {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border-color: #278241;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.cuenta-google {
+  max-width: 300px;
+  border-radius: 20px;
+  border-color: #278241;
+}
+
+#input-email {
+  border-radius: 10px;
+  border-color: #278241;
+}
+
+/*Fin form*/
+/* Inicio inscripcion*//*# sourceMappingURL=style.css.map */

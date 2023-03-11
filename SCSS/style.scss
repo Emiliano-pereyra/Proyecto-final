@@ -1,5 +1,7 @@
 $colorbg: #278241;
 $dropdown-border-radius:20px;
+$input-border-radius: 10px;
+$input-group-addon-border-color: $colorbg;
 
 html{
     min-height: 100vh !important; 
@@ -126,3 +128,54 @@ input::placeholder{
     max-width: 60px;
     max-height: 56px;
 }
+
+/* fin traductor*/
+
+/* Inicio form*/
+
+
+#sesion{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.orden-boton{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.seleccion{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border-color: $input-group-addon-border-color;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cuenta-google{
+    max-width: 300px;
+    border-radius: 20px;
+    border-color: $input-group-addon-border-color
+}
+
+#input-email{
+    border-radius: $input-border-radius;
+    border-color: $input-group-addon-border-color;
+}
+
+/*Fin form*/
+
+/* Inicio inscripcion*/
