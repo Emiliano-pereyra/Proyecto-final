@@ -10,23 +10,39 @@
     <title>Traductor</title>
 </head>
 
-<body id="body">
+<body>
     <!-- Nav bar bootstrap -->
     <nav class="navbar bg-green-500 d-flex flex-wrap justify-content-evenly" style="background-color: #278241;">
         <a class="mt-2 mb-2 ms-1" href="../index.html"><img src="../imagenes/Polilearn.svg" alt="logo"></a>
         <form class="position-relative" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <img src="../iconos/lupa.svg" alt="" id="lupa">
+            <img src="../iconos/lupa.svg" alt="icono-lupa" id="lupa">
         </form>
         <ul class="mt-2 mb-2 ">
             <li><a class="navbar-brand" href="./material.html">Material</a></li>
             <li><a class="navbar-brand" href="./traductor.html">Traductor</a></li>
-
             <li><a class="navbar-brand" href="./form.html">Iniciar Sesión</a></li>
         </ul>
     </nav>
+    <main>
 
 
+    <!-- Input para traductor -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="drop">
+          Seleccione un idioma
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Ingles</a></li>
+          <li><a class="dropdown-item" href="#">Chino</a></li>
+          <li><a class="dropdown-item" href="#">Portugues</a></li>
+        </ul>
+      </div>
+
+    <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea" placeholder="Ingrese texto a traducir"></textarea>
+      </div>
+    </main>
 
 
     <!-- Footer -->

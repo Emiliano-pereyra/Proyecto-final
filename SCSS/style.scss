@@ -37,19 +37,40 @@ input::placeholder{
 
 /* Material */
 
-aside{
+#sidebar-menu{
     background-color: black;
     width: 40%;
+    min-height: 100vh;
 }
 
+#sidebar-menu-mobile{
+    display: none;
+  }
+  #collapse-menu{
+    background-color: black;
+    padding-left: 5%;
+  }
 
-.listas ul{
+
+  .listas ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     color: #FFFFFF;
     gap: 15px;
     margin-left: 16%;
+  }
+
+  .listas-mobile ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #FFFFFF;
+    gap: 15px;
+  }
+
+.listas li{
+    color: #FFFFFF;
 }
 
 #inscribir {
@@ -70,8 +91,20 @@ aside{
     line-height: 15px;
 }
 
+@media screen and (max-width: 1280px) {
+  #sidebar-menu{
+    display: none;
+  }
+  #sidebar-menu-mobile{
+    display: block;
+  }
+}
+
 
 /* Fin material*/
 
 /* Traductor */
 
+#drop{
+    background-color: #278241;
+}

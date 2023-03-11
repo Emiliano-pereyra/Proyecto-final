@@ -10,7 +10,7 @@
     <title>Material de estudio</title>
 </head>
 
-<body>
+<body class="position-relative">
     <!-- Nav bar bootstrap -->
     <nav class="navbar bg-green-500 d-flex flex-wrap justify-content-evenly" style="background-color: #278241;"
         id="nav">
@@ -31,100 +31,147 @@
 
 
     </nav>
-
-
-    <aside id="lista" class="d-flex justify-content-evenly" >
+    <aside id="sidebar-menu-mobile">
+        
         <!--Cartelera de material-->
-        <div class="listas">
-            <ul>
-                <h2>Materiales de estudio</h2>
-                <li>
-                    <h3>Cursos</h3>
-                </li>
-                <li>
-                    <h5>Cursos de inglés</h5>
-                </li>
-                <li>
-                    <h5>Cursos de francés</h5>
-                </li>
-                <li>
-                    <h5>Cursos de alemán</h5>
-                </li>
-                <li>
-                    <h5>Cursos de italiano</h5>
-                </li>
-            </ul>
+        <div id="collapse-menu">
 
-            <ul>
-                <li>
-                    <h3>Libros</h3>
-                </li>
-                <li>
-                    <h5>Literatura</h5>
-                </li>
-                <li>
-                    <h5>Ciencias</h5>
-                </li>
-                <li>
-                    <h5>Novelas</h5>
-                </li>
-                <li>
-                    <h5>Biología</h5>
-                </li>
-            </ul>
+            <h2 style="color: white;">Materiales de estudio</h2>
+            <div class="listas-mobile row row-cols-1 row-cols-md-2 g-0">
+                <ul class="col">
+                    <li>
+                        <h3>Cursos</h3>
+                    </li>
+                    <li>
+                        <h5>Cursos de inglés</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de francés</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de alemán</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de italiano</h5>
+                    </li>
+                </ul>
+
+                <ul class="col">
+                    <li>
+                        <h3>Libros</h3>
+                    </li>
+                    <li>
+                        <h5>Literatura</h5>
+                    </li>
+                    <li>
+                        <h5>Ciencias</h5>
+                    </li>
+                    <li>
+                        <h5>Novelas</h5>
+                    </li>
+                    <li>
+                        <h5>Biología</h5>
+                    </li>
+                </ul>
+            </div>
         </div>
     </aside>
+    <main class="d-flex position-relative end-0 top-0">
+        <aside id="sidebar-menu">
+            <!--Cartelera de material-->
+            <div id="lista" class="listas">
+                <ul>
+                    <h2>Materiales de estudio</h2>
+                    <li>
+                        <h3>Cursos</h3>
+                    </li>
+                    <li>
+                        <h5>Cursos de inglés</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de francés</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de alemán</h5>
+                    </li>
+                    <li>
+                        <h5>Cursos de italiano</h5>
+                    </li>
+                </ul>
 
+                <ul>
+                    <li>
+                        <h3>Libros</h3>
+                    </li>
+                    <li>
+                        <h5>Literatura</h5>
+                    </li>
+                    <li>
+                        <h5>Ciencias</h5>
+                    </li>
+                    <li>
+                        <h5>Novelas</h5>
+                    </li>
+                    <li>
+                        <h5>Biología</h5>
+                    </li>
+                </ul>
+            </div>
+        </aside>
 
-    <main>
         <!-- Card de cursos -->
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-1">
-                <div class="col-md-4 ">
-                    <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Ingles para principiantes</h5>
-                        <div class="datos">
-                            <h6 class="info-card">Duración</h6>
-                            <h6 class="info-card">Participantes</h6>
+        <div id="card-container" class="row row-cols-1 row-cols-md-2 g-0">
+            <div class="col">
+                <div class="card mb-3 mt-3 ms-2">
+                    <div class="row g-1">
+                        <div class="col-md-4 ">
+                            <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
-                        <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingles para principiantes</h5>
+                                <div class="datos">
+                                    <h6 class="info-card">Duración</h6>
+                                    <h6 class="info-card">Participantes</h6>
+                                </div>
+                                <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
+                                <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card de cursos -->
+            <div class="col">
+                <div class="card mb-3 mt-3 ms-2">
+                    <div class="row g-1">
+                        <div class="col-md-4">
+                            <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingles para principiantes</h5>
+                                <div class="datos">
+                                    <h6 class="info-card">Duración</h6>
+                                    <h6 class="info-card">Participantes</h6>
+                                </div>
+                                <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
+                                <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Card de cursos -->
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-1">
-                <div class="col-md-4">
-                    <img src="../imagenes/about-us.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Ingles para principiantes</h5>
-                        <div class="datos">
-                            <h6 class="info-card">Duración</h6>
-                            <h6 class="info-card">Participantes</h6>
-                        </div>
-                        <h6 class="card-text">Aprenderemos las bases de la escritura inglesa...</h6>
-                        <a href="./inscripción.html" class="btn btn-success" id="inscribir">Inscribirse</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
+
     </main>
 
 
 
 
-
-
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white mt-5 " style="background-color: #278241">
+    <footer class="text-center text-lg-start text-white " style="background-color: #278241">
         <!-- Grid container -->
         <div class="container p-2 pb-2">
 
