@@ -105,4 +105,20 @@ input::placeholder {
 /* Traductor */
 #drop {
   background-color: #278241;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+#traducir {
+  background: #36B5A5;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  border: none;
+}
+
+#swap {
+  max-width: 60px;
+  max-height: 56px;
 }/*# sourceMappingURL=style.css.map */

@@ -24,24 +24,51 @@
             <li><a class="navbar-brand" href="./form.html">Iniciar Sesión</a></li>
         </ul>
     </nav>
-    <main>
 
 
-    <!-- Input para traductor -->
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="drop">
-          Seleccione un idioma
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Ingles</a></li>
-          <li><a class="dropdown-item" href="#">Chino</a></li>
-          <li><a class="dropdown-item" href="#">Portugues</a></li>
-        </ul>
-      </div>
+    <main class="">
+        <!-- Input para traductor -->
+        <!-- Cuadro de texto-->
+        <div class="input-group mb-3 mt-5 col-md-6 justify-content-center" id="traductor">
+            <div class="input">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" id="drop">
+                    Seleccione idioma
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                    <li><a class="dropdown-item" href="#">Portugués</a></li>
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                </ul>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Introduzca texto a traducir" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Texto ingresado</label>
+                </div>
+            </div>
 
-    <div class="input-group">
-        <textarea class="form-control" aria-label="With textarea" placeholder="Ingrese texto a traducir"></textarea>
-      </div>
+            <img src="../iconos/Swap.svg" alt="swap" id="swap">
+
+            <div class="input">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" id="drop">
+                    Seleccione idioma
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Inglés</a></li>
+                    <li><a class="dropdown-item" href="#">Portugués</a></li>
+                    <li><a class="dropdown-item" href="#">Español</a></li>
+                </ul>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Texto traducido</label>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button" id="traducir">TRADUCIR</button>
+          </div>
     </main>
 
 

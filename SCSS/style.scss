@@ -1,4 +1,5 @@
 $colorbg: #278241;
+$dropdown-border-radius:20px;
 
 html{
     min-height: 100vh !important; 
@@ -106,5 +107,22 @@ input::placeholder{
 /* Traductor */
 
 #drop{
-    background-color: #278241;
+    background-color: $colorbg;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#traducir{
+    background: #36B5A5;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    border: none;
+    
+}
+
+#swap{
+    max-width: 60px;
+    max-height: 56px;
 }
