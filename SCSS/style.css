@@ -274,9 +274,25 @@ footer {
   font-size: 14px;
   margin-bottom: 20px;
   color: #000000;
+  align-items: center;
   text-transform: uppercase;
+  transition: 0.4s;
 }
 
+@media screen and (max-width: 700px) {
+  .inscripcion p {
+    font-size: 16px;
+  }
+  .inscripcion h1 {
+    font-size: 22px;
+  }
+  .inscripcion button {
+    width: 110px;
+    height: 25px;
+    font-size: 10px;
+    padding: 2px 18px;
+  }
+}
 /* fin inscripcion */
 /* animaciones */
 /*hover nav simple para el contenedor*/
@@ -288,7 +304,14 @@ footer {
 }
 
 .seleccion:hover {
-  color: #FFFFFF;
+  color: #000000;
+  background-color: #36B5A5;
+  border-color: #FFFFFF;
+  font-weight: bold;
+}
+
+.inscripcion button:hover {
+  color: #000000;
   background-color: #36B5A5;
   border-color: #FFFFFF;
   font-weight: bold;
