@@ -166,6 +166,7 @@ footer {
   padding: 8px 50px;
   gap: 10px;
   margin-top: 20px;
+  transition: 0.4s;
 }
 
 /* uso de mixin para area de texto y container*/
@@ -357,6 +358,13 @@ footer {
 }
 
 #inscribir:hover {
+  color: #000000;
+  background-color: #36B5A5;
+  border-color: #FFFFFF;
+  font-weight: bold;
+}
+
+#traducir:hover {
   color: #000000;
   background-color: #36B5A5;
   border-color: #FFFFFF;
