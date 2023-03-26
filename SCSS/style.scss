@@ -15,7 +15,8 @@ body{
 
 a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: $colorwhi;
+    transition: 0.3s;
 }
 
 ul{
@@ -181,7 +182,6 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 
@@ -193,25 +193,50 @@ input::placeholder{
 }
 
 .seleccion{
-    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 8px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 2px solid #278241;
     border-radius: 20px;
-    border-color: $input-group-addon-border-color;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
+    transition: 0.4s;
 }
 
 .cuenta-google{
-    max-width: 300px;
+    min-width: 300px;
+    min-height: 40px;
     border-radius: 20px;
-    border-color: $input-group-addon-border-color
+    border-color: $input-group-addon-border-color;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 8px;
+    gap: 40px;
+    background: #FFFFFF;
+    border: 2px solid #278241;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-bottom: 30px;
 }
 
 #input-email{
     border-radius: $input-border-radius;
     border-color: $input-group-addon-border-color;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 8px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+
 }
+
+
 
 /*Fin form*/
 
@@ -270,7 +295,27 @@ input::placeholder{
     margin-bottom: 20px;
     color: #000000;
     text-transform: uppercase;
-
 }
 
 
+/* fin inscripcion */
+
+/* animaciones */
+
+/*hover nav simple para el contenedor*/
+
+a:hover{
+    background-color: $colorwhi;
+}
+
+.cuenta-google:hover{
+    color: $colorwhi;
+    background-color: $colorbg;
+    border-color: $colorwhi;
+}
+
+.seleccion:hover{
+    color: $colorwhi;
+    background-color: #36B5A5;
+    border-color: $colorwhi;
+}
