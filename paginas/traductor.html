@@ -33,47 +33,45 @@
     </nav>
 
 
+
     <main class="">
-        <!-- Input para traductor -->
-        <!-- Cuadro de texto-->
-        <div class="input-group mb-3 mt-5 col-md-6 justify-content-center" id="traductor">
-            <div class="input">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" id="drop">
-                    Seleccione idioma
+        <div class="container">
+            <!-- Input para traductor -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle mt-5" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Seleccione un idioma
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Inglés</a></li>
-                    <li><a class="dropdown-item" href="#">Portugués</a></li>
-                    <li><a class="dropdown-item" href="#">Español</a></li>
-                </ul>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Introduzca texto a traducir" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Texto ingresado</label>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Inglés</a>
+                    <a class="dropdown-item" href="#">Portugés</a>
+                    <a class="dropdown-item" href="#">Español</a>
                 </div>
             </div>
 
+
+            <!-- Cuadro de texto-->
+            <textarea class="form-control" placeholder="Introduzca texto a traducir" id="floatingTextarea2"></textarea>
             <img src="../iconos/Swap.svg" alt="swap" id="swap">
+        </div>
 
-            <div class="input">
-                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" id="drop">
-                    Seleccione idioma
+        <div class="container">
+            <!-- Input para traductor -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle mt-3" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Seleccione un idioma
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Inglés</a></li>
-                    <li><a class="dropdown-item" href="#">Portugués</a></li>
-                    <li><a class="dropdown-item" href="#">Español</a></li>
-                </ul>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                        style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Texto traducido</label>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Inglés</a>
+                    <a class="dropdown-item" href="#">Portugés</a>
+                    <a class="dropdown-item" href="#">Español</a>
                 </div>
             </div>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
+
+
+            <!-- Cuadro de texto-->
+            <textarea class="form-control" placeholder="Introduzca texto a traducir" id="floatingTextarea2"></textarea>
             <button class="btn btn-primary" type="button" id="traducir">TRADUCIR</button>
         </div>
     </main>
@@ -130,6 +128,7 @@
                     <p><img src="../iconos/facebook.svg" alt="">Facebook</p>
                     <p><img src="../iconos/twitter.svg" alt="">Twitter</p>
                     <p><img src="../iconos/icono instagram.svg" alt="">Instagram</p>
+                
                 </div>
                 <!-- Grid fin -->
             </div>

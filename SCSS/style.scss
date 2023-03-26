@@ -1,7 +1,9 @@
 $colorbg: #278241;
+$colorwhi: #FFFFFF;
 $dropdown-border-radius:20px;
 $input-border-radius: 10px;
 $input-group-addon-border-color: $colorbg;
+
 
 html{
     min-height: 100vh !important; 
@@ -108,25 +110,60 @@ input::placeholder{
 
 /* Traductor */
 
-#drop{
+#dropdownMenuButton{
     background-color: $colorbg;
     border: none;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+    font-size: 20px;
 }
 
 #traducir{
-    background: #36B5A5;
+    background: $colorbg;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     border: none;
     
+    padding: 8px 50px;
+    gap: 10px;
+    margin-top: 20px;
 }
 
+/* uso de mixin para area de texto y container*/
+@mixin textarea{
+    max-width: 600px !important;
+    min-height: 340px !important;
+    margin-top: 10px;
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 10px !important;
+}
+
+#floatingTextarea2{
+    @include textarea
+}
+
+@mixin cont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    @include cont
+}
+
+/* fin de mixin */
+
 #swap{
-    max-width: 60px;
-    max-height: 56px;
+    max-width: 48px;
+    max-height: 48px;
+    margin-top: 20px;
+    transform: rotate(90deg);
+    align-items: center;
 }
 
 /* fin traductor*/
@@ -233,5 +270,7 @@ input::placeholder{
     margin-bottom: 20px;
     color: #000000;
     text-transform: uppercase;
-    
+
 }
+
+
