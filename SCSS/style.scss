@@ -6,7 +6,7 @@ $input-group-addon-border-color: $colorbg;
 
 
 html{
-    min-height: 100vh !important; 
+    min-height: 100% !important; 
 }
 body{
     min-height: 100% !important;
@@ -40,6 +40,14 @@ input::placeholder{
 }
 
 /* Fin nav */
+
+/* edicion de footer*/
+
+footer{
+    
+    bottom: 100%;
+}
+/* fin edicion footer*/
 
 /* Material */
 
@@ -304,18 +312,17 @@ input::placeholder{
 
 /*hover nav simple para el contenedor*/
 
-a:hover{
-    background-color: $colorwhi;
-}
 
 .cuenta-google:hover{
-    color: $colorwhi;
-    background-color: $colorbg;
+    color: #000000;
+    background-color: #BDD045;
     border-color: $colorwhi;
+    font-weight: bold;
 }
 
 .seleccion:hover{
     color: $colorwhi;
     background-color: #36B5A5;
     border-color: $colorwhi;
+    font-weight: bold;
 }

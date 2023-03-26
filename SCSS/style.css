@@ -1,5 +1,5 @@
 html {
-  min-height: 100vh !important;
+  min-height: 100% !important;
 }
 
 body {
@@ -40,6 +40,12 @@ input::placeholder {
 }
 
 /* Fin nav */
+/* edicion de footer*/
+footer {
+  bottom: 100%;
+}
+
+/* fin edicion footer*/
 /* Material */
 #sidebar-menu {
   background-color: black;
@@ -274,18 +280,16 @@ input::placeholder {
 /* fin inscripcion */
 /* animaciones */
 /*hover nav simple para el contenedor*/
-a:hover {
-  background-color: #FFFFFF;
-}
-
 .cuenta-google:hover {
-  color: #FFFFFF;
-  background-color: #278241;
+  color: #000000;
+  background-color: #BDD045;
   border-color: #FFFFFF;
+  font-weight: bold;
 }
 
 .seleccion:hover {
   color: #FFFFFF;
   background-color: #36B5A5;
   border-color: #FFFFFF;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
