@@ -87,6 +87,7 @@ footer {
   border-color: #278241;
   background-color: #FFFFFF;
   color: black;
+  transition: 0.3s;
 }
 
 .datos {
@@ -100,12 +101,50 @@ footer {
   line-height: 15px;
 }
 
+#fondo {
+  max-width: 165px;
+  max-height: 130px;
+  border-radius: 20px;
+  margin-top: 5px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4));
+  border-radius: 20px;
+}
+
+.card-body h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-body h6 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 1280px) {
   #sidebar-menu {
     display: none;
   }
   #sidebar-menu-mobile {
     display: block;
+  }
+  .card-body h5 {
+    font-size: 12px;
+  }
+  .card-body h6 {
+    font-size: 10px;
+  }
+  .datos {
+    row-gap: 35px;
+  }
+  #fondo {
+    max-width: 110px;
+    max-height: 75px;
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+  #body {
+    display: flex;
+    flex-direction: row;
   }
 }
 /* Fin material*/
@@ -311,6 +350,13 @@ footer {
 }
 
 .inscripcion button:hover {
+  color: #000000;
+  background-color: #36B5A5;
+  border-color: #FFFFFF;
+  font-weight: bold;
+}
+
+#inscribir:hover {
   color: #000000;
   background-color: #36B5A5;
   border-color: #FFFFFF;
